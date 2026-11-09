@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fast-video-compressor
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
