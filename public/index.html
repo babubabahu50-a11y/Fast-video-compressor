@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fast Video Compressor</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="logo">▶</div>
+<div>
+<h1>Fast Video Compressor</h1>
+<p>দ্রুত কমপ্রেস করুন • Original FPS ও Resolution রাখুন</p>
+</div>
+</header>
+<section class="panel">
+<h2>ভিডিও নির্বাচন করুন</h2>
+<label class="drop" for="video">
+<span class="upload">↑</span>
+<strong id="fileName">ভিডিও বেছে নিতে এখানে চাপ দিন</strong>
+<small>MP4, MOV, MKV, WebM</small>
+</label>
+<input id="video" type="file" accept="video/*" hidden>
+<div id="details" class="details" hidden></div>
+<button id="compress" disabled>Compress Video</button>
+<p id="status">ভিডিও নির্বাচন করুন।</p>
+<a id="download" hidden>Download compressed video</a>
+</section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
